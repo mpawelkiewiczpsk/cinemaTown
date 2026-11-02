@@ -1,14 +1,7 @@
 // src/data/types.ts – modele domenowe aplikacji
 export type AgeRating = "BO" | "7+" | "12+" | "16+" | "18+";
 export type Genre =
-  | "Akcja"
-  | "Animacja"
-  | "Dramat"
-  | "Familijny"
-  | "Horror"
-  | "Komedia"
-  | "Sci-Fi"
-  | "Thriller";
+  "Akcja" | "Animacja" | "Dramat" | "Familijny" | "Horror" | "Komedia" | "Sci-Fi" | "Thriller";
 
 export type Movie = {
   id: string;

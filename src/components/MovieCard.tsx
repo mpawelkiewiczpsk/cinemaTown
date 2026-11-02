@@ -16,13 +16,15 @@ type Props = {
   movie: Movie;
   onPress: (movie: Movie) => void;
   onLongPress?: (movie: Movie) => void;
+  onPressIn?: (movie: Movie) => void;
 };
 
-function MovieCardComponent({ movie, onPress, onLongPress }: Props) {
+function MovieCardComponent({ movie, onPress, onLongPress, onPressIn }: Props) {
   const theme = useAppTheme();
   return (
     <Pressable
       onPress={() => onPress(movie)}
+      onPressIn={() => onPressIn?.(movie)}
       onLongPress={() => onLongPress?.(movie)}
       delayLongPress={350}
       android_ripple={{ color: "rgba(0,0,0,0.15)", foreground: true }}

@@ -31,5 +31,4 @@ export function startOfDay(date: Date) {
 }
 
 // Oznaczenie miejsca: rząd 0 -> „A”, miejsce 4 -> „A5”
-export const seatId = (row: number, seat: number) =>
-  `${String.fromCharCode(65 + row)}${seat + 1}`;
+export const seatId = (row: number, seat: number) => `${String.fromCharCode(65 + row)}${seat + 1}`;

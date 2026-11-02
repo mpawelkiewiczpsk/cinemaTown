@@ -27,10 +27,7 @@ export function SegmentedControl<T extends string>({ options, value, onChange }:
             accessibilityRole="tab"
             accessibilityState={{ selected: active }}
           >
-            <AppText
-              variant="caption"
-              color={active ? theme.colors.text : theme.colors.textMuted}
-            >
+            <AppText variant="caption" color={active ? theme.colors.text : theme.colors.textMuted}>
               {option.label}
             </AppText>
           </Pressable>

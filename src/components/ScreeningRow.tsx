@@ -42,10 +42,7 @@ export function ScreeningRow({ screening, movie, hall, onPress }: Props) {
         <AppText variant="caption" muted numberOfLines={1}>
           {hall.name} · {screening.language} · {formatPrice(screening.price)}
         </AppText>
-        <AppText
-          variant="caption"
-          color={free < 10 ? theme.colors.warning : theme.colors.success}
-        >
+        <AppText variant="caption" color={free < 10 ? theme.colors.warning : theme.colors.success}>
           Wolne miejsca: {free}
         </AppText>
       </View>
